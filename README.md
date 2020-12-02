@@ -50,6 +50,7 @@ curl -X POST http://localhost:8001/consumers/guillaume/key-auth -d ''
 
 ### Add plugins
 ```console
-curl -X POST http://localhost:8001/routes/{id}/plugins \
+curl -X POST http://localhost:8001/routes/2a932ad0-7c75-40a7-9c6f-e3a51d318adc/plugins \
     --data "name=key-auth" 
 ```
+key":"lZHMztEqzIyMPS1xL6ljWmlU8HD3aTCp

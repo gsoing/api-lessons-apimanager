@@ -1,0 +1,17 @@
+_format_version: "2.1"
+_transform: true
+
+services:
+- name: fish
+  url: https://hubeau.eaufrance.fr/api
+  plugins:
+  - name: key-auth
+  routes:
+  - name: fish
+    paths:
+    - /fish
+
+consumers:
+- username: guillaume
+  keyauth_credentials:
+  - key: guillaume

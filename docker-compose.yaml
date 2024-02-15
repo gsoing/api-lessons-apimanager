@@ -1,7 +1,7 @@
 version: "3.7"
 services:
   kong:
-    image: kong:alpine
+    image: kong:3.1.1-alpine
     environment:
       KONG_DATABASE: "off"
       KONG_DECLARATIVE_CONFIG: "/usr/local/kong/declarative/kong.yml"

@@ -1,7 +1,7 @@
 version: "3.7"
 services:
   kong:
-    image: kong:alpine
+    image: kong:3.1.1-alpine
     depends_on:
       - kong-base
     environment:
@@ -18,7 +18,7 @@ services:
       - "8001:8001"
       - "8444:8444"
   cassandra-init:
-    image: kong:alpine
+    image: kong:3.1.1-alpine
     environment:
       KONG_DATABASE: cassandra
       KONG_CASSANDRA_CONTACT_POINTS: kong-base
